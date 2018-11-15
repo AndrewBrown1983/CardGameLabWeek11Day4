@@ -10,6 +10,13 @@ public class Deck {
 
     }
 
+    public Card getFirstCard() {
+         Card card = this.cards.get(0);
+         this.cards.remove(card);
+         return card;
+
+    }
+
     public int numberOfCards() {
         return this.cards.size();
     }
